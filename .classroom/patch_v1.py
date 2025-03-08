@@ -222,7 +222,7 @@ patches = [[T1,T1FIX],
 
 def do_patch_v1(filepath):
      # Read in the file
-     with open(path, 'r') as file:
+     with open(filepath, 'r') as file:
           filedata = file.read()
 
      # Replace the target string
@@ -236,7 +236,7 @@ def do_patch_v1(filepath):
           filedata = filedata_patched
 
      # Write the file out again
-     with open(path, 'w') as file:
+     with open(filepath, 'w') as file:
           file.write(filedata)
 
 filepath = Path('./templates/GamesLeague.java')
